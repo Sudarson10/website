@@ -1,0 +1,215 @@
+<html>
+    <title>
+        Portfolio
+    </title>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <style>
+      *{
+            font-family: 'poppins',sans-serif;
+            color:white;
+        }
+        body{
+            background-image: linear-gradient(to top left, rgb(3, 2, 3), rgb(11, 78, 236));
+        }
+        .navbar {
+          height: 80px; /* Change the height as needed */
+        }
+
+        nav{
+          position:sticky !important;
+          width: 100%;
+          top:0;
+          left:0;
+          box-shadow:0px 5px  rgba(0,0,0);
+          z-index:10;
+        }
+        .navbar-brand{
+          font-weight: 600;
+        }
+        .nav-link{
+          color:white !important;
+        }
+        .nav-link:hover{
+          border-bottom: 1px solid white;
+        }
+        #Home{
+          width: 100%;
+          height:100%;
+          display:flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        #Home p{
+          position: absolute;
+          top:25%;
+          font-size:75px;
+          opacity:0;
+          animation:anime 3s ease-in-out;
+        }
+        @keyframes anime{
+          50%{
+            opacity:1;
+          }
+          100%{
+            opacity:0;
+          }
+        }
+        #Home h1{
+          font-size:75px;
+          }
+        #Home p:nth-child(1){
+          animation-delay: 0s;
+        }
+        #Home p:nth-child(2){
+          animation-delay: 3s;
+        }
+        #Home p:nth-child(3){
+          animation-delay: 6s;
+        }
+        #Home p:nth-child(4){
+          animation-delay:9s;
+        }
+        .m{
+          padding-left: 20px;
+        }
+        #skills{
+          width:100%;
+        }
+    
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@1,300&display=swap');
+      @media screen and (max-width: 576px){
+          #Home p{
+            font-size:40px;
+          }
+        }
+    </style>
+    <body>
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">My Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="skills.html">skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+            
+          <section id="projects">
+            <div class="container"><br><br>
+              <h1 style="text-align: center;">Projects</h1>
+              <br><br>
+              <div class="row">
+                <div class="col">
+                  <div data-aos="zoom-in-up">
+                  <h1>Calculator</h1>
+                  <div class="card" style="width: 18rem;">
+                    <img src="calculator.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="color:black;font-weight: bold;">A calculator created using html,css ad javascript.</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div data-aos="zoom-in-left" data-aos-delay="200">
+                  <h1>Dice Game</h1>
+                  <div class="card" style="width: 18rem;">
+                    <img src="dice.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="color:black;font-weight: bold;">Dice game created using html,css and javascript.</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col">
+                  <div data-aos="zoom-in-up" data-aos-delay="400">
+                  <h1>Dino game</h1>
+                  <div class="card" style="width: 18rem;">
+                  <img src="dino.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" style="color:black;font-weight: bold;">Dino game similar to google dino game created using html,css and javascript.</p>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div data-aos="zoom-in-down" data-aos-delay="600">
+                  <h1>Class Allotment</h1>
+                  <div class="card" style="width: 18rem;">
+                    <img src="class allotment.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text" style="color:black;font-weight: bold;">A class allotment app which can be used in colleges or schools for changing classes due to insufficient room.Created using django</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div data-aos="zoom-out-right" data-aos-delay="800">
+                  <h1>Notes App</h1>
+                  <div class="card" style="width: 18rem;">
+                    <img src="notes.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="color:black;font-weight: bold;">A notes app similar to samsung notes created using django.</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div  data-aos="zoom-out-up" data-aos-delay="1000">
+                  <h1>Weather App</h1>
+                  <div class="card" style="width: 18rem;">
+                    <img src="weather.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="color:black;font-weight: bold;">A weather app using weather api to view current weather in every city in the world. Created using django.</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div data-aos="zoom-out-down" data-aos-delay="1200">
+                  <br><br><br>
+                    <h1> Full stack Ecommerce</h1>
+                  <div class="card" style="width: 18rem;">
+                    <img src="ecommerce.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="color:black;font-weight: bold;">A Ecommerce website to buy products.Created using django.</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+    </body>
+</html>
