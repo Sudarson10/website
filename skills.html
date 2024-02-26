@@ -15,8 +15,9 @@
         body{
             background-image: linear-gradient(to top left, rgb(3, 2, 3), rgb(11, 78, 236));
         }
-        .navbar {
-          height: 80px; /* Change the height as needed */
+        .navbar-toggler {
+          height:90px; 
+          width:90px;/* Change the height as needed */
         }
 
         nav{
@@ -36,48 +37,9 @@
         .nav-link:hover{
           border-bottom: 1px solid white;
         }
-        #Home{
-          width: 100%;
-          height:100%;
-          display:flex;
-          align-items: center;
-          flex-direction: column;
-        }
-        #Home p{
-          position: absolute;
-          top:25%;
-          font-size:75px;
-          opacity:0;
-          animation:anime 3s ease-in-out;
-        }
-        @keyframes anime{
-          50%{
-            opacity:1;
-          }
-          100%{
-            opacity:0;
-          }
-        }
-        #Home h1{
-          font-size:75px;
-          }
-        #Home p:nth-child(1){
-          animation-delay: 0s;
-        }
-        #Home p:nth-child(2){
-          animation-delay: 3s;
-        }
-        #Home p:nth-child(3){
-          animation-delay: 6s;
-        }
-        #Home p:nth-child(4){
-          animation-delay:9s;
-        }
-        .m{
-          padding-left: 20px;
-        }
         #skills{
           width:100%;
+          height:100%;
         }
     
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:ital,wght@1,300&display=swap');
@@ -185,7 +147,7 @@
               </div>
             </div>
 
-          </section><br><br><br><br>
+          </section>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>

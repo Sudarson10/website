@@ -14,11 +14,13 @@
             
         }
         .hello {
-    opacity: 0; /* Start with opacity 0 to hide the element */
-    animation-name: fadeIn; /* Name of the animation */
-    animation-duration: 1s; /* Duration of the animation */
-    animation-delay: 12s; /* Delay before the animation starts */
-    animation-fill-mode: forwards; /* Keeps the element visible after the animation */
+          position: absolute;
+          top:25%;
+          opacity: 0; /* Start with opacity 0 to hide the element */
+          animation-name: fadeIn; /* Name of the animation */
+          animation-duration: 1s; /* Duration of the animation */
+          animation-delay: 12s; /* Delay before the animation starts */
+          animation-fill-mode: forwards; /* Keeps the element visible after the animation */
 }
 
 @keyframes fadeIn {
@@ -29,8 +31,9 @@
         body{
           background-image: linear-gradient(to top left, rgb(3, 2, 3), rgb(11, 78, 236));
         }
-        .navbar {
-          height: 80px; /* Change the height as needed */
+        .navbar-toggler {
+          height:90px; 
+          width:90px;/* Change the height as needed */
         }
 
         nav{
